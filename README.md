@@ -1,10 +1,13 @@
-<p align="center">
-  <img src="./public/zu_logo.png" alt="ZuSpace Logo" width="180" />
-</p>
-
-# ZuSpace
-
-> 一个用于搭建个人主站的全栈项目，包含个人主页、技术博客、开源项目展示、留言互动、后台管理，以及围绕站内内容的 AI 对话能力。
+<div align="center">
+  <img src="./public/zu_logo.png" alt="ZuSpace Logo" width="200" />
+  
+  # ZuSpace
+  
+  > 一个用于搭建个人主站的全栈项目，包含个人主页、技术博客、开源项目展示、留言互动、后台管理，以及围绕站内内容的 AI 对话能力。
+  
+  **[🌐 官网地址](https://wwenj.github.io/zuSpaceX/)**
+  
+</div>
 
 ## 项目简介
 
@@ -25,14 +28,53 @@ ZuSpace 不是单纯的静态主页模板，而是一套围绕“内容展示 + 
 
 ## 功能概览
 
-| 模块 | 说明 |
-| --- | --- |
-| 公开站点 | 首页、About、博客列表/详情、项目列表、留言板、个人中心 |
-| 内容系统 | Markdown 博客、代码高亮、文章置顶/隐藏、项目标签与外链展示 |
-| 互动能力 | 站点留言、文章评论、用户资料维护 |
-| 权限体系 | 注册登录、`Cookie + Session` 登录态、普通用户/管理员角色 |
-| 管理后台 | 文章、项目、留言、用户四类后台管理 |
-| AI 能力 | 内置 Agent 对话页，可结合作者资料、文章内容、项目内容进行问答与解读 |
+| 模块     | 说明                                                                |
+| -------- | ------------------------------------------------------------------- |
+| 公开站点 | 首页、About、博客列表/详情、项目列表、留言板、个人中心              |
+| 内容系统 | Markdown 博客、代码高亮、文章置顶/隐藏、项目标签与外链展示          |
+| 互动能力 | 站点留言、文章评论、用户资料维护                                    |
+| 权限体系 | 注册登录、`Cookie + Session` 登录态、普通用户/管理员角色            |
+| 管理后台 | 文章、项目、留言、用户四类后台管理                                  |
+| AI 能力  | 内置 Agent 对话页，可结合作者资料、文章内容、项目内容进行问答与解读 |
+
+## 功能演示
+
+<div align="center">
+
+### 首页
+
+<img src="./public/home.png" alt="首页" width="600" />
+
+### 博客列表
+
+<img src="./public/bolg.png" alt="博客列表" width="600" />
+
+### 博客详情
+
+<img src="./public/blog_detail.png" alt="博客详情" width="600" />
+
+### 项目展示
+
+<img src="./public/project.png" alt="项目展示" width="600" />
+
+### 留言板
+
+<img src="./public/guestbook.png" alt="留言板" width="600" />
+
+### 个人中心
+
+<img src="./public/user.png" alt="个人中心" width="600" />
+
+### AI 对话
+
+<img src="./public/chat.png" alt="AI 对话" width="600" />
+
+### 后台管理
+
+<img src="./public/admin1.png" alt="后台管理 - 文章" width="600" />
+<img src="./public/admin2.png" alt="后台管理 - 项目" width="600" />
+
+</div>
 
 ## 项目文档
 
@@ -54,12 +96,12 @@ pnpm run dev
 
 ## 技术栈
 
-| 层级 | 技术 |
-| --- | --- |
+| 层级 | 技术                                                             |
+| ---- | ---------------------------------------------------------------- |
 | 前端 | React 19、TypeScript、Vite、React Router、Tailwind CSS、Radix UI |
-| 后端 | NestJS、TypeORM、MySQL、Swagger、bcrypt |
-| AI | LangChain、LangGraph、OpenAI SDK / OpenAI 兼容模型接口 |
-| 部署 | `build.sh` 一体化构建、Docker（当前以服务端镜像为主） |
+| 后端 | NestJS、TypeORM、MySQL、Swagger、bcrypt                          |
+| AI   | LangChain、LangGraph、OpenAI SDK / OpenAI 兼容模型接口           |
+| 部署 | `build.sh` 一体化构建、Docker（当前以服务端镜像为主）            |
 
 ## 项目结构
 
