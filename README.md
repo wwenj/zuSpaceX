@@ -155,6 +155,12 @@ docker build -t zuspace . && docker run -p 8080:8080 zuspace
 
 </div>
 
+## 原创声明
+
+该网站所有的页面设计与代码实现，均为本人独立完成，部分图片借助 AI 生成，欢迎交流学习，也欢迎关注我的公众号。
+
+<img src="https://file.ljcdn.com/nebula/7290098544f54bb3bae642283caa59bd_1768534011475.webp" width="60%"  />
+
 ## License
 
 [MIT](./LICENSE)
