@@ -33,10 +33,7 @@ export class User {
   @Column({ length: 500, default: "" })
   intro: string;
 
-  @Column({
-    default:
-      "https://file.ljcdn.com/nebula/8499b993ad2e49bea369aa91f6b5d96d_1768962374205.jpeg",
-  })
+  @Column({ default: "/media/avatars/avatar-01.png" })
   avatar: string;
 
   @Column({ name: "game_score", default: 0 })
