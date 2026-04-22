@@ -1,9 +1,9 @@
 <div align="center">
   <img src="./public/zu_logo.png" alt="ZuSpace Logo" width="200" />
   
-  # ZuSpace
+  # ZuSpaceX
   
-  > 一个用于搭建个人主站的全栈项目，包含个人主页、技术博客、开源项目展示、留言互动、后台管理，以及围绕站内内容的 AI 对话能力。
+  一个用于搭建个人主站的全栈项目，包含个人主页、技术博客、开源项目展示、留言互动、后台管理，以及围绕站内内容的 AI 对话能力。
   
   **[🌐 官网地址](https://wwenj.github.io/zuSpaceX/)**
   
