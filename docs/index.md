@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始 →
-      link: /zuSpaceX/guide/getting-started
+      link: /guide/getting-started
     - theme: alt
       text: 在线体验
       link: https://www.wwenj.com/
@@ -38,7 +38,7 @@ features:
 <div class="home-section-header">
 <h2>从零开始，到上线运行</h2>
 <p>按顺序阅读，完成从本地启动到生产部署的全流程配置。</p>
-<a href="/zuSpaceX/guide/showcase" class="section-showcase-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg><span>查看功能演示</span><span class="link-arrow">→</span></a>
+<a href="./guide/showcase" class="section-showcase-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg><span>查看功能演示</span><span class="link-arrow">→</span></a>
 </div>
 <div class="home-map">
 <div class="home-map-card card-guide">
@@ -47,9 +47,9 @@ features:
 <h3>启动 · 配置 · 部署</h3>
 <p class="card-desc">环境准备、数据库初始化、本地开发到生产上线的完整流程。</p>
 <div class="home-map-links">
-<a href="/zuSpaceX/guide/getting-started"><span>快速开始</span><span class="link-arrow">→</span></a>
-<a href="/zuSpaceX/guide/configuration"><span>配置说明</span><span class="link-arrow">→</span></a>
-<a href="/zuSpaceX/guide/deployment"><span>部署说明</span><span class="link-arrow">→</span></a>
+<a href="./guide/getting-started"><span>快速开始</span><span class="link-arrow">→</span></a>
+<a href="./guide/configuration"><span>配置说明</span><span class="link-arrow">→</span></a>
+<a href="./guide/deployment"><span>部署说明</span><span class="link-arrow">→</span></a>
 </div>
 </div>
 <div class="home-map-card card-arch">
@@ -58,9 +58,9 @@ features:
 <h3>前端 · 服务端 · Agent</h3>
 <p class="card-desc">深入了解各层的技术选型、模块划分与核心设计决策。</p>
 <div class="home-map-links">
-<a href="/architecture/frontend"><span>前端架构</span><span class="link-arrow">→</span></a>
-<a href="/architecture/backend"><span>服务端架构</span><span class="link-arrow">→</span></a>
-<a href="/architecture/agent"><span>Agent 架构</span><span class="link-arrow">→</span></a>
+<a href="./architecture/frontend"><span>前端架构</span><span class="link-arrow">→</span></a>
+<a href="./architecture/backend"><span>服务端架构</span><span class="link-arrow">→</span></a>
+<a href="./architecture/agent"><span>Agent 架构</span><span class="link-arrow">→</span></a>
 </div>
 </div>
 </div>
