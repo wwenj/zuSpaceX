@@ -50,15 +50,11 @@ jobs:
         working-directory: docs
         run: pnpm build
 
-      - name: Delete old artifacts
-        uses: geekyeggo/delete-artifact@v2
-        with:
-          name: github-pages
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vitepress/dist
+          overwrite: true
 
   deploy:
     environment:
