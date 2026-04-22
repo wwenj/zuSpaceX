@@ -1,6 +1,6 @@
 # 功能演示
 
-这个页面只展示当前项目里已经实现的主要模块，对应截图均来自仓库根目录 `public/`。
+直接体验线上地址：https://www.wwenj.com/
 
 ## 首页
 
@@ -52,8 +52,8 @@ About 页面用于展示作者介绍、经历和兴趣方向。
   <div class="showcase-card">
     <img src="/showcase/blog_detail.png" alt="博客详情页" />
     <div class="meta">
-      <strong>博客详情</strong>
-      <span>支持 Markdown 内容阅读、详情展示和围绕文章展开的互动。</span>
+      <strong>博客详情，AI 问答</strong>
+      <span>支持 Markdown 内容阅读、详情展示和围绕文章展开的评论，可一键开启 AI 问答。</span>
     </div>
   </div>
 </div>
@@ -86,7 +86,7 @@ About 页面用于展示作者介绍、经历和兴趣方向。
   </div>
 </div>
 
-## Chat
+## AI 分身聊天
 
 Chat 页面是站内 Agent 能力的主要入口。
 

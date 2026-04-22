@@ -2,37 +2,43 @@
 
 ## 技术栈
 
-- React 19
-- TypeScript
-- Vite
-- React Router
-- Tailwind CSS
-- Radix UI
+| 技术 | 用途 |
+| --- | --- |
+| React 19 | UI 框架 |
+| TypeScript | 类型系统 |
+| Vite | 构建工具 |
+| React Router | 路由管理 |
+| Tailwind CSS | 样式方案 |
+| Radix UI | 无障碍基础组件 |
 
 ## 页面结构
 
-当前前端分成两类页面：
+**公开站点**
 
-- `/`
-- `/blog`
-- `/blog/:id`
-- `/projects`
-- `/about`
-- `/guestbook`
-- `/chat`
-- `/login`
-- `/profile`
+| 路由 | 页面 |
+| --- | --- |
+| `/` | 首页 |
+| `/about` | 个人介绍 |
+| `/blog` | 博客列表 |
+| `/blog/:id` | 博客详情 |
+| `/projects` | 项目展示 |
+| `/guestbook` | 留言板 |
+| `/chat` | AI 对话 |
+| `/login` | 登录 / 注册 |
+| `/profile` | 个人中心 |
 
-后台页面：
+**管理后台**
 
-- `/admin/articles`
-- `/admin/projects`
-- `/admin/comments`
-- `/admin/users`
+| 路由 | 页面 |
+| --- | --- |
+| `/admin/articles` | 文章管理 |
+| `/admin/projects` | 项目管理 |
+| `/admin/comments` | 留言管理 |
+| `/admin/users` | 用户管理 |
 
 ## 代码组织
 
-```text
+```
 client/src/
 ├── pages/        # 公开页面
 ├── admin/        # 管理后台
@@ -42,13 +48,8 @@ client/src/
 └── components/   # 通用组件
 ```
 
-## 关键实现
+## 关键设计
 
-- 使用 `HashRouter`，静态部署和一体化部署都更稳定
-- `client/src/api` 统一封装请求，前端通过 `/api/*` 与服务端通信
-- 博客详情、留言板、后台管理和聊天页都在同一套路由体系里
-
-## 当前边界
-
-- 页面渲染、交互和请求在前端处理
-- 权限、会话、数据持久化都交给服务端
+- **HashRouter** — 静态部署与一体化部署均无需服务端路由配置
+- **`/api` 代理** — 开发环境通过 Vite 代理转发；生产环境与服务端同域，无需跨域处理
+- **权限控制** — 前端基于登录态控制路由访问，实际权限校验在服务端

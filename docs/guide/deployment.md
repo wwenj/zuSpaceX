@@ -2,49 +2,45 @@
 
 ## 推荐方式
 
-当前项目当前推荐一体化部署：前端构建产物复制到服务端目录，由 Nest 统一提供静态资源和 API。
+前端构建产物并入服务端目录，由 NestJS 统一提供静态资源和 API，只需部署一个服务。
 
-## 构建流程
-
-根目录提供了 `build.sh`：
+## 构建
 
 ```bash
 bash build.sh
 ```
 
-该脚本会先构建前端，再把前端产物复制到：
+脚本执行顺序：
 
-- `server/views`
-- `server/public`
+1. 构建前端（`client/dist`）
+2. 将 `index.html` 拷贝到 `server/views`
+3. 将静态资源拷贝到 `server/public`
+4. 构建服务端
 
-之后再构建服务端，最终只需要部署 `server`。
-
-## 服务启动
+## 启动
 
 ```bash
 cd server
 npm run start:prod
 ```
 
-默认生产端口来自：
-
-- `server/env/.env.production`
-
-当前默认值是 `8080`。
+默认生产端口为 `8080`，可在 `server/env/.env.production` 中修改。
 
 ## Docker
 
-当前 `Dockerfile` 已经复用根目录 `build.sh`，镜像构建时会直接完成前端和服务端的一体化构建。
-
-常用命令：
+当前 `Dockerfile` 已集成 `build.sh`，镜像构建时自动完成前后端一体化构建：
 
 ```bash
 docker build -t zuspace .
 docker run -p 8080:8080 zuspace
 ```
 
-## 部署注意点
+建议通过 `-e` 传入数据库和模型配置，避免将密钥打入镜像。
 
+## 注意事项
+
+::: tip
 - 登录态依赖 Cookie，生产环境建议前后端同域部署
-- 前端当前使用 `HashRouter`，服务端静态托管更简单
-- 公开部署前，建议先把数据库和模型配置改成环境变量
+- 前端使用 `HashRouter`，服务端无需额外配置路由回退
+- 如需独立部署前端（CDN / Nginx），需同步调整 API 跨域策略
+:::

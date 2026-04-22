@@ -17,19 +17,30 @@ const socialLinks = repository
 
 export default defineConfig({
   lang: "zh-CN",
-  title: "ZuSpace",
-  description: "ZuSpace 使用文档与技术架构",
+  title: "ZuSpaceX",
+  description: "赛博像素风全栈个人主站 · React 19 + NestJS + AI Agent",
   base: resolveBase(),
   lastUpdated: true,
   head: [
-    ["meta", { name: "theme-color", content: "#0f172a" }],
+    ["meta", { name: "theme-color", content: "#0f766e" }],
     ["meta", { name: "author", content: "ZuSpace" }],
+    ["meta", { property: "og:title", content: "ZuSpaceX" }],
+    ["meta", { property: "og:description", content: "赛博像素风全栈个人主站" }],
   ],
   themeConfig: {
     logo: "/zu_logo.png",
+    siteTitle: "ZuSpaceX",
     nav: [
-      { text: "使用文档", link: "/guide/getting-started" },
-      { text: "技术架构", link: "/architecture/frontend" },
+      { text: "快速开始", link: "/guide/getting-started" },
+      { text: "功能演示", link: "/guide/showcase" },
+      {
+        text: "技术架构",
+        items: [
+          { text: "前端架构", link: "/architecture/frontend" },
+          { text: "服务端架构", link: "/architecture/backend" },
+          { text: "Agent 架构", link: "/architecture/agent" },
+        ],
+      },
     ],
     sidebar: {
       "/guide/": [
@@ -57,23 +68,27 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-    socialLinks,
+    socialLinks: [
+      ...(repository
+        ? [{ icon: "github", link: `https://github.com/${repository}` }]
+        : [{ icon: "github", link: "https://github.com/wwenj/zuSpaceX" }]),
+    ],
     outline: {
       level: [2, 3],
-      label: "本页导航",
+      label: "本页目录",
     },
     docFooter: {
       prev: "上一页",
       next: "下一页",
     },
     footer: {
-      message: "Powered by VitePress",
-      copyright: "Copyright © 2026 ZuSpace",
+      message: "基于 MIT 协议开源",
+      copyright: "Copyright © 2026 ZuSpaceX",
     },
     sidebarMenuLabel: "菜单",
     darkModeSwitchLabel: "主题",
-    lightModeSwitchTitle: "切换到浅色模式",
-    darkModeSwitchTitle: "切换到深色模式",
+    lightModeSwitchTitle: "浅色模式",
+    darkModeSwitchTitle: "深色模式",
     returnToTopLabel: "回到顶部",
   },
 });
