@@ -21,6 +21,7 @@ export default defineConfig({
   description: "赛博像素风全栈个人主站 · React 19 + NestJS + AI Agent",
   base: resolveBase(),
   lastUpdated: true,
+  ignoreDeadLinks: [/^http:\/\/localhost/],
   head: [
     ["meta", { name: "theme-color", content: "#0f766e" }],
     ["meta", { name: "author", content: "ZuSpace" }],
