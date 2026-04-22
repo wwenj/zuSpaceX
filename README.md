@@ -163,4 +163,4 @@ docker build -t zuspace . && docker run -p 8080:8080 zuspace
 
 ## License
 
-[MIT](./LICENSE)
+[CC BY-NC 4.0](./LICENSE) - 个人使用，禁止商业用途

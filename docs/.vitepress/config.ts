@@ -83,7 +83,7 @@ export default defineConfig({
       next: "下一页",
     },
     footer: {
-      message: "基于 MIT 协议开源",
+      message: "基于 CC BY-NC 4.0 协议开源 · 个人使用，禁止商业用途",
       copyright: "Copyright © 2026 ZuSpaceX",
     },
     sidebarMenuLabel: "菜单",
