@@ -1,0 +1,17 @@
+<svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="320" height="320" rx="32" fill="#0D1117"/>
+  <rect x="16" y="16" width="288" height="288" rx="24" fill="url(#bg)" stroke="#00E5FF" stroke-width="4"/>
+  <circle cx="160" cy="124" r="56" fill="#121A24" stroke="#00E5FF" stroke-width="4"/>
+  <path d="M96 250C96 206.922 124.654 184 160 184C195.346 184 224 206.922 224 250V264H96V250Z" fill="#121A24" stroke="#00FF9D" stroke-width="4"/>
+  <path d="M119 112C127.5 92 144.167 82 169 82C193.833 82 211.5 92 222 112" stroke="#FF00FF" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="142" cy="126" r="6" fill="#00E5FF"/>
+  <circle cx="178" cy="126" r="6" fill="#00E5FF"/>
+  <path d="M144 150C150.667 156 159 159 169 159C179 159 187.333 156 194 150" stroke="#00FF9D" stroke-width="4" stroke-linecap="round"/>
+  <text x="160" y="292" fill="#E6E6E6" font-family="monospace" font-size="22" text-anchor="middle">DEMO PROFILE</text>
+  <defs>
+    <linearGradient id="bg" x1="40" y1="40" x2="280" y2="280" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111B28"/>
+      <stop offset="1" stop-color="#1A1030"/>
+    </linearGradient>
+  </defs>
+</svg>
