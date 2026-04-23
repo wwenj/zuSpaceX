@@ -124,6 +124,10 @@ docker build -t zuspace . && docker run -p 8080:8080 zuspace
 
 <img src="./public/home.png" alt="首页" width="600" />
 
+### 坦克大战
+
+<img src="./public/game.png" alt="坦克大战" width="600" />
+
 ### 博客列表
 
 <img src="./public/bolg.png" alt="博客列表" width="600" />
