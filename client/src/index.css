@@ -1,0 +1,798 @@
+/* 本地字体文件定义 */
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/fonts/PressStart2P-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "VT323";
+  src: url("/fonts/VT323-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("/fonts/NotoSansSC-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  src: url("/fonts/NotoSansSC-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Futuristic Tech UI Style - Surface Dark Neon Circuit
+  未来科技界面风格 - 深色霓虹电路
+  Sleek, high-tech, cyber-inspired dark theme with neon accents
+*/
+
+@layer base {
+  :root {
+    /* === Primary Colors - Neon Cyan 霓虹青色 === */
+    --primary: 187 100% 45%; /* #00E5FF - 核心交互色 */
+    --primary-hover: 187 100% 60%; /* #33EFFF - 悬停发光 */
+    --primary-active: 188 100% 42%; /* #00B8D9 - 激活状态 */
+    --primary-foreground: 0 0% 5%; /* #0D0D0D - 主色上的文字 */
+
+    /* === Background Colors - Deep Black 深黑背景 === */
+    --background: 0 0% 5%; /* #0D0D0D - 页面基底 */
+    --surface-primary: 0 0% 11%; /* #1C1C1C - 卡片表面 */
+    --surface-secondary: 0 0% 16%; /* #2A2A2A - 次级面板 */
+    --foreground: 0 0% 90%; /* #E6E6E6 - 主要文字 */
+
+    /* === Text Colors - High Contrast Gray 高对比灰 === */
+    --text-primary: 0 0% 90%; /* #E6E6E6 */
+    --text-secondary: 0 0% 65%; /* #A6A6A6 */
+    --text-tertiary: 0 0% 44%; /* #707070 */
+    --text-on-neon: 0 0% 5%; /* #0D0D0D */
+
+    /* === Secondary Colors - Cyber Green 电子绿 === */
+    --secondary: 162 100% 50%; /* #00FF9D - 次要强调 */
+    --secondary-foreground: 0 0% 5%; /* #0D0D0D */
+
+    /* === Functional Colors 功能色 === */
+    --accent: 300 100% 50%; /* #FF00FF - 霓虹洋红强调 */
+    --accent-foreground: 0 0% 5%;
+    --destructive: 353 100% 60%; /* #FF3355 - 错误警告 */
+    --destructive-foreground: 0 0% 90%;
+    --success: 146 100% 65%; /* #4DFF91 - 成功确认 */
+    --warning: 45 100% 52%; /* #FFC107 - 警告提示 */
+
+    /* === UI Elements === */
+    --card: 0 0% 11%; /* #1C1C1C */
+    --card-foreground: 0 0% 90%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 90%;
+    --border: 0 0% 16%; /* #2A2A2A */
+    --input: 0 0% 16%;
+    --ring: 187 100% 45%; /* 聚焦环 = primary */
+
+    /* === Border Radius - Pixel Sharp === */
+    --radius-small: 0px; /* 像素风格无圆角 */
+    --radius-medium: 0px;
+    --radius-large: 0px;
+    --radius-full: 50%; /* 圆形保持 */
+    --radius: 0px;
+
+    /* === Muted Colors === */
+    --muted: 0 0% 16%;
+    --muted-foreground: 0 0% 65%;
+
+    /* === Shadows & Glows - 光晕与阴影 === */
+    --shadow-neon-primary: 0 0 12px hsl(187 100% 45% / 0.6);
+    --shadow-neon-secondary: 0 0 12px hsl(162 100% 50% / 0.6);
+    --shadow-neon-accent: 0 0 16px hsl(300 100% 50% / 0.5);
+    --shadow-glow-subtle: 0 0 20px hsl(187 100% 45% / 0.3);
+    --shadow-pixel: 4px 4px 0 hsl(187 100% 45% / 0.4);
+  }
+
+  /* Typography - 分层字体系统 */
+  body {
+    @apply bg-background text-foreground;
+    /* 默认使用现代字体，支持中英文 */
+    font-family:
+      "Noto Sans SC",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+
+  /* 标题默认使用科技感字体 */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Orbitron", "Noto Sans SC", system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.02em;
+  }
+
+  /* 代码块使用等宽字体 */
+  code,
+  pre {
+    font-family: "JetBrains Mono", "Consolas", "Monaco", monospace;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+/* Custom Utilities - 自定义工具类 */
+@layer utilities {
+  /* 像素字体类 - 仅在需要时使用 */
+  .font-pixel {
+    font-family: "Press Start 2P", "VT323", monospace !important;
+    font-weight: 400;
+    line-height: 1.6;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  .font-pixel-alt {
+    font-family: "VT323", "Press Start 2P", monospace !important;
+    font-weight: 400 !important;
+    line-height: 1.4 !important;
+  }
+
+  /* 强制像素字体样式 - 最高优先级 */
+  .pixel-font-force {
+    font-family: "Press Start 2P", "VT323", monospace !important;
+    font-weight: 400 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+  }
+
+  /* 科技感字体类 */
+  .font-tech {
+    font-family: "Orbitron", "Noto Sans SC", system-ui, sans-serif;
+  }
+
+  /* 正常字体类 */
+  .font-normal {
+    font-family:
+      "Noto Sans SC",
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      sans-serif;
+  }
+
+  /* 等宽字体类 */
+  .font-mono {
+    font-family: "JetBrains Mono", "Consolas", "Monaco", monospace;
+  }
+  /* Neon Glow Effects - 霓虹光晕 */
+  .glow-primary {
+    box-shadow: var(--shadow-neon-primary);
+  }
+
+  .glow-secondary {
+    box-shadow: var(--shadow-neon-secondary);
+  }
+
+  .glow-accent {
+    box-shadow: var(--shadow-neon-accent);
+  }
+
+  /* Pixel Shadow - 像素阴影 */
+  .shadow-pixel {
+    box-shadow: var(--shadow-pixel);
+  }
+
+  .shadow-pixel-lg {
+    box-shadow: 6px 6px 0 hsl(187 100% 45% / 0.5);
+  }
+
+  /* Text Glow - 文字发光 */
+  .text-glow-primary {
+    text-shadow: 0 0 8px hsl(187 100% 45% / 0.8);
+  }
+
+  .text-glow-secondary {
+    text-shadow: 0 0 8px hsl(162 100% 50% / 0.8);
+  }
+
+  /* Pixel Text Shadow - 像素文字阴影 */
+  .text-pixel-shadow {
+    text-shadow: 2px 2px 0 hsl(187 100% 45% / 0.6);
+  }
+
+  /* Pixel Grid Background - 像素网格背景 */
+  .bg-grid-pixel {
+    background-image:
+      linear-gradient(hsl(187 100% 45% / 0.15) 2px, transparent 2px),
+      linear-gradient(90deg, hsl(187 100% 45% / 0.15) 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+
+  /* Cyber Grid Background - 电路网格背景 */
+  .bg-grid-neon {
+    background-image:
+      linear-gradient(hsl(187 100% 45% / 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(187 100% 45% / 0.1) 1px, transparent 1px);
+    background-size: 30px 30px;
+  }
+
+  /* Pixel Dot Pattern - 像素点阵 */
+  .bg-dots-pixel {
+    background-image: radial-gradient(
+      circle,
+      hsl(187 100% 45% / 0.2) 1px,
+      transparent 1px
+    );
+    background-size: 8px 8px;
+  }
+
+  /* Gradient Backgrounds - 渐变背景 */
+  .bg-gradient-cyber {
+    background: linear-gradient(180deg, hsl(0 0% 5%) 0%, hsl(0 0% 11%) 100%);
+  }
+
+  /* CRT Screen Effect - CRT 显示器效果 */
+  .crt-effect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      to bottom,
+      transparent 50%,
+      rgba(0, 229, 255, 0.05) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Pulse Animation - 脉冲动画 */
+  @keyframes pulse-glow {
+    0%,
+    100% {
+      box-shadow: 0 0 12px hsl(187 100% 45% / 0.6);
+    }
+    50% {
+      box-shadow: 0 0 20px hsl(187 100% 45% / 0.9);
+    }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Pixel Blink - 像素闪烁 */
+  @keyframes pixel-blink {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0.7;
+    }
+  }
+
+  .animate-pixel-blink {
+    animation: pixel-blink 2s ease-in-out infinite;
+  }
+
+  /* Glitch Effect - 故障效果 */
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  .animate-glitch {
+    animation: glitch 0.3s linear infinite;
+  }
+
+  /* Scan Line Effect - 扫描线效果 */
+  @keyframes scan-line {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+
+  .scan-line {
+    animation: scan-line 8s linear infinite;
+  }
+
+  /* Pixel Bounce - 像素跳动 */
+  @keyframes pixel-bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-4px);
+    }
+  }
+
+  .animate-pixel-bounce {
+    animation: pixel-bounce 1s ease-in-out infinite;
+  }
+
+  /* Retro Border - 复古像素边框 */
+  .border-pixel {
+    border-style: solid;
+    border-image: repeating-linear-gradient(
+        90deg,
+        hsl(187 100% 45%) 0px,
+        hsl(187 100% 45%) 4px,
+        transparent 4px,
+        transparent 8px
+      )
+      1;
+  }
+
+  /* Sci-Fi Login Card Effects - 科幻电影闪烁效果 */
+  /* 垂直扫描线动画 */
+  @keyframes scan-vertical {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+  }
+
+  /* 光点闪烁动画 */
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(1);
+    }
+    10%,
+    90% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.5);
+      box-shadow: 0 0 10px currentColor;
+    }
+  }
+
+  /* 赛博朋克背景颜色闪烁 - 模拟城市天空闪电效果 */
+  @keyframes cyberpunk-flicker {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    5%,
+    15% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0.3;
+    }
+    20%,
+    80% {
+      opacity: 0;
+    }
+    85%,
+    95% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.2;
+    }
+  }
+
+  /* 大门打开动画 - 左门向左滑动 */
+  @keyframes door-open-left {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0.5;
+    }
+  }
+
+  /* 大门打开动画 - 右门向右滑动 */
+  @keyframes door-open-right {
+    0% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0.5;
+    }
+  }
+
+  /* 中央光束扩展效果 */
+  @keyframes expand-beam {
+    0% {
+      width: 2px;
+      opacity: 0.8;
+    }
+    50% {
+      width: 100px;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      opacity: 0;
+    }
+  }
+
+  /* 水平扫描线效果 */
+  @keyframes scan-horizontal {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  /* 缩放进入动画 */
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* 淡入动画 */
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* === 赛博朋克穿梭进入动效 === */
+
+  /* 数字雨效果 */
+  @keyframes matrix-rain {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+
+  /* 隧道扩展效果 */
+  @keyframes tunnel-expand {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+      border-width: 0px;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(8);
+      opacity: 0;
+      border-width: 1px;
+    }
+  }
+
+  /* 中心光芒爆发 */
+  @keyframes center-burst {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+      box-shadow: 0 0 20px rgba(0, 229, 255, 1);
+    }
+    50% {
+      transform: scale(3);
+      opacity: 0.8;
+      box-shadow: 0 0 60px rgba(0, 229, 255, 0.8);
+    }
+    100% {
+      transform: scale(10);
+      opacity: 0;
+      box-shadow: 0 0 100px rgba(0, 229, 255, 0.3);
+    }
+  }
+
+  /* 网格扫描效果 */
+  @keyframes grid-scan {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+  }
+
+  /* 网格移动效果 */
+  @keyframes grid-move {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 20px 20px;
+    }
+  }
+
+  /* 头像发光效果 */
+  @keyframes avatar-glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+      transform: scale(0.9);
+    }
+    50% {
+      box-shadow: 0 0 40px rgba(0, 229, 255, 1);
+      transform: scale(1.05);
+    }
+    100% {
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.8);
+      transform: scale(1);
+    }
+  }
+
+  /* 头像扫描效果 */
+  @keyframes scan-avatar {
+    0% {
+      clip-path: inset(0 0 100% 0);
+      border-color: rgba(0, 229, 255, 1);
+    }
+    100% {
+      clip-path: inset(0 0 0% 0);
+      border-color: rgba(0, 229, 255, 0.3);
+    }
+  }
+
+  /* 故障文字效果 */
+  @keyframes glitch-text {
+    0% {
+      transform: translate(0);
+      filter: hue-rotate(0deg);
+    }
+    10% {
+      transform: translate(-2px, 2px);
+      filter: hue-rotate(90deg);
+    }
+    20% {
+      transform: translate(-2px, -2px);
+      filter: hue-rotate(180deg);
+    }
+    30% {
+      transform: translate(2px, 2px);
+      filter: hue-rotate(270deg);
+    }
+    40% {
+      transform: translate(2px, -2px);
+      filter: hue-rotate(360deg);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+      filter: hue-rotate(90deg);
+    }
+    60% {
+      transform: translate(-2px, -2px);
+      filter: hue-rotate(180deg);
+    }
+    70% {
+      transform: translate(2px, 2px);
+      filter: hue-rotate(270deg);
+    }
+    80% {
+      transform: translate(2px, -2px);
+      filter: hue-rotate(360deg);
+    }
+    90% {
+      transform: translate(-2px, 2px);
+      filter: hue-rotate(90deg);
+    }
+    100% {
+      transform: translate(0);
+      filter: hue-rotate(0deg);
+    }
+  }
+
+  /* 打字机效果 */
+  @keyframes type-writer {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  /* 赛博渐现效果 */
+  @keyframes cyber-fade {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(10px);
+    }
+    50% {
+      filter: blur(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0px);
+    }
+  }
+
+  /* === 简化登录动效 === */
+
+  /* 成功背景光晕 */
+  @keyframes success-glow {
+    0% {
+      opacity: 0;
+      background-color: hsla(187, 100%, 45%, 0);
+    }
+    50% {
+      opacity: 1;
+      background-color: hsla(187, 100%, 45%, 0.15);
+    }
+    100% {
+      opacity: 0.8;
+      background-color: hsla(187, 100%, 45%, 0.1);
+    }
+  }
+
+  /* 快速扫描线 */
+  @keyframes scan-line-fast {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  /* 边框发光 */
+  @keyframes border-glow {
+    0% {
+      box-shadow: 0 0 0 rgba(0, 229, 255, 0);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.8);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.4);
+    }
+  }
+
+  /* 简单发光效果 */
+  @keyframes simple-glow {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+      transform: scale(0.95);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.8);
+      transform: scale(1.02);
+    }
+    100% {
+      box-shadow: 0 0 20px rgba(0, 229, 255, 0.6);
+      transform: scale(1);
+    }
+  }
+}

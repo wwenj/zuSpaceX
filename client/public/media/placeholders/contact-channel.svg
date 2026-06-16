@@ -1,0 +1,12 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="360" rx="24" fill="#FFFFFF"/>
+  <rect x="16" y="16" width="328" height="328" rx="16" stroke="#0D1117" stroke-width="8"/>
+  <rect x="40" y="40" width="72" height="72" fill="#0D1117"/>
+  <rect x="248" y="40" width="72" height="72" fill="#0D1117"/>
+  <rect x="40" y="248" width="72" height="72" fill="#0D1117"/>
+  <rect x="56" y="56" width="40" height="40" fill="#FFFFFF"/>
+  <rect x="264" y="56" width="40" height="40" fill="#FFFFFF"/>
+  <rect x="56" y="264" width="40" height="40" fill="#FFFFFF"/>
+  <path d="M144 56H176V88H144V56ZM192 56H224V120H192V56ZM240 56H272V88H240V56ZM144 104H176V136H144V104ZM240 104H272V136H240V104ZM144 152H224V184H144V152ZM240 152H272V216H240V152ZM144 200H176V232H144V200ZM192 200H224V232H192V200ZM144 248H176V280H144V248ZM192 248H272V280H192V248Z" fill="#0D1117"/>
+  <text x="180" y="332" fill="#0D1117" font-family="monospace" font-size="18" text-anchor="middle">CHANNEL PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,12 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="360" height="360" rx="24" fill="#FFFFFF"/>
+  <rect x="16" y="16" width="328" height="328" rx="16" stroke="#0D1117" stroke-width="8"/>
+  <rect x="40" y="40" width="72" height="72" fill="#0D1117"/>
+  <rect x="248" y="40" width="72" height="72" fill="#0D1117"/>
+  <rect x="40" y="248" width="72" height="72" fill="#0D1117"/>
+  <rect x="56" y="56" width="40" height="40" fill="#FFFFFF"/>
+  <rect x="264" y="56" width="40" height="40" fill="#FFFFFF"/>
+  <rect x="56" y="264" width="40" height="40" fill="#FFFFFF"/>
+  <path d="M144 64H168V88H144V64ZM184 64H208V136H184V64ZM224 64H248V88H224V64ZM144 104H168V128H144V104ZM224 104H248V128H224V104ZM144 144H168V168H144V144ZM184 144H208V168H184V144ZM224 144H248V208H224V144ZM264 144H288V168H264V144ZM144 184H208V208H144V184ZM264 184H288V208H264V184ZM144 224H168V248H144V224ZM184 224H248V248H184V224ZM264 224H288V248H264V224ZM144 264H168V288H144V264ZM184 264H208V288H184V264ZM224 264H288V288H224V264Z" fill="#0D1117"/>
+  <text x="180" y="332" fill="#0D1117" font-family="monospace" font-size="20" text-anchor="middle">WECHAT PLACEHOLDER</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="720" height="520" rx="36" fill="#0F172A"/>
+  <rect x="24" y="24" width="672" height="472" rx="28" fill="url(#bg)" stroke="rgba(148,163,184,0.18)"/>
+  <g opacity="0.22">
+    <path d="M56 112H664" stroke="#94A3B8"/>
+    <path d="M56 208H664" stroke="#94A3B8"/>
+    <path d="M56 304H664" stroke="#94A3B8"/>
+    <path d="M56 400H664" stroke="#94A3B8"/>
+    <path d="M168 72V448" stroke="#94A3B8"/>
+    <path d="M280 72V448" stroke="#94A3B8"/>
+    <path d="M392 72V448" stroke="#94A3B8"/>
+    <path d="M504 72V448" stroke="#94A3B8"/>
+    <path d="M616 72V448" stroke="#94A3B8"/>
+  </g>
+
+  <rect x="96" y="88" width="220" height="104" rx="22" fill="#0B1220" stroke="#1D4ED8" stroke-width="2"/>
+  <text x="126" y="128" fill="#E2E8F0" font-size="22" font-family="Arial, sans-serif" font-weight="700">Client</text>
+  <text x="126" y="158" fill="#94A3B8" font-size="16" font-family="Arial, sans-serif">公开站点 / 管理后台</text>
+
+  <rect x="404" y="88" width="220" height="104" rx="22" fill="#0B1220" stroke="#14B8A6" stroke-width="2"/>
+  <text x="434" y="128" fill="#E2E8F0" font-size="22" font-family="Arial, sans-serif" font-weight="700">Server</text>
+  <text x="434" y="158" fill="#94A3B8" font-size="16" font-family="Arial, sans-serif">Auth / Article / Project / Comment</text>
+
+  <rect x="148" y="250" width="184" height="88" rx="20" fill="#111827" stroke="#38BDF8" stroke-width="2"/>
+  <text x="176" y="286" fill="#E2E8F0" font-size="20" font-family="Arial, sans-serif" font-weight="700">Agent</text>
+  <text x="176" y="314" fill="#94A3B8" font-size="15" font-family="Arial, sans-serif">SSE / History / Skill</text>
+
+  <rect x="388" y="250" width="184" height="88" rx="20" fill="#111827" stroke="#22C55E" stroke-width="2"/>
+  <text x="416" y="286" fill="#E2E8F0" font-size="20" font-family="Arial, sans-serif" font-weight="700">MySQL</text>
+  <text x="416" y="314" fill="#94A3B8" font-size="15" font-family="Arial, sans-serif">User / Article / Project / Comment</text>
+
+  <path d="M316 140H404" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M240 192V250" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M480 192V250" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M332 294H388" stroke="#64748B" stroke-width="2.5" stroke-linecap="round"/>
+
+  <circle cx="360" cy="140" r="7" fill="#38BDF8"/>
+  <circle cx="240" cy="221" r="7" fill="#38BDF8"/>
+  <circle cx="480" cy="221" r="7" fill="#22C55E"/>
+  <circle cx="360" cy="294" r="7" fill="#14B8A6"/>
+
+  <rect x="198" y="384" width="324" height="58" rx="18" fill="rgba(15,118,110,0.12)" stroke="rgba(45,212,191,0.28)"/>
+  <text x="228" y="420" fill="#CCFBF1" font-size="18" font-family="Arial, sans-serif">One build, one service, one deployment path</text>
+
+  <defs>
+    <linearGradient id="bg" x1="72" y1="56" x2="648" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#020617"/>
+    </linearGradient>
+  </defs>
+</svg>
